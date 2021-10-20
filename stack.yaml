@@ -1,0 +1,13 @@
+# Use GHC 8.10.7
+resolver: lts-18.13
+
+allow-newer: false
+
+packages:
+- .
+
+# Use the most recent version of reanimate on GitHub, which has features not
+# yet available on Hackage.
+extra-deps:
+- github: reanimate/reanimate
+  commit: 1f6e35235af67fa16588ea2acd60d54cdc696187
